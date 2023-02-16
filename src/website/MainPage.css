@@ -1,55 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FCF6F5FF;
+}
+
 :root {
   --main-color: #234E70;
-  --second-color: #FBF8BE;
+  --second-color: #FFFFED;
   --font: Verdana;
+
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    color: FBF8BE;
-    font-weight: bold;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    color: #FBF8BE;
-  }
+  background-color: #333;
+  overflow: hidden;
+}
 
-  .body {
-    background-color: var(--main-color);
-    width: 100%;
-    height: auto;
-    padding: 10px; /*padding top*/
-    font-family: var(--font);
-    display: block;
-    margin: auto 0;
-  }
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  .img {
-    height: 15%;
-    width: 15%;
-    border-radius: 50%;
-  }
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: FBF8BE;
+  font-weight: bold;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: #FBF8BE;
+}
+
+.container {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 50%;
+  padding: 20px 10px;
+  font-family: var(--font);
+  text-align: center;
+  color: var(--second-color);
+}
+
+.img {
+  display: block;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: solid 2px black;
+}
 
 .paragraph {
-  background-color: #636363;
-  padding: 10px 30px;
-  width: 60%;
+  width: 90%;
   text-align: center;
+  margin: 20px auto;
+}
+
+.container h1 {
+  padding: 0;
+  margin: 10px;
+  font-size: xx-large;
+}
+
+/* Professional Experience */
+
+.exp-container{
+  display: flex;
+}
+
+.line {
+  background-color: #E3B448;
+  height: auto;
+  width: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.left {
+  padding: 2px 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.right {
+  padding: 5px 10px;
+  margin: auto;
+}
+
+.exp-container-inner{
+  display: flex;
 }
