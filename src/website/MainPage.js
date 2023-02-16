@@ -6,8 +6,8 @@ export default function MainPage() {
     return (
         <>
             <NavBar />
+            <h1>Anthony Sanchez</h1>
             <div className="container">
-                <h1>Anthony Sanchez</h1>
                 <img className="img" src="/myheadshot.png"></img>
                 <p className='paragraph'>A hands on, detail orientated, and professional Web Developer with entry-level experience in HTML, CSS and React. Who’s
                     motivated to contribute to large scale projects with a proven track record of developing polished and creative user interfaces.</p>
@@ -18,12 +18,14 @@ export default function MainPage() {
                 <div className='right'>
                     <h2>Knomadix</h2>
                     <div className='exp-container-inner'>
-                        <h3><i>Front End Developer Intern</i></h3>
-                        <div className='tech-stack'>
-                            <ul>
-                                <li>Coffee</li>
-                                <li>Tea</li>
-                                <li>Milk</li>
+                        <h3 className='exp-container-inner-left'><i>Front End Developer Intern</i></h3>
+                        <div className='exp-container-inner-right'>
+                            <ul className='tech-stack'>
+                                <li className='tech-stack-items'>React.js</li>
+                                <li className='tech-stack-items'>HTML</li>
+                                <li className='tech-stack-items'>CSS</li>
+                                <li className='tech-stack-items'>React Redux</li>
+                                <li className='tech-stack-items'>Material-UI</li>
                             </ul>
                         </div>
                     </div>

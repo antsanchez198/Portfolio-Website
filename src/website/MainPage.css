@@ -42,12 +42,15 @@ body {
 
 .container {
   background-color: var(--main-color);
-  width: 100%;
+  width: 97%;
   height: 50%;
   padding: 20px 10px;
   font-family: var(--font);
   text-align: center;
   color: var(--second-color);
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
 .img {
@@ -65,8 +68,8 @@ body {
   margin: 20px auto;
 }
 
-.container h1 {
-  padding: 0;
+h1 {
+  text-align: center;
   margin: 10px;
   font-size: xx-large;
 }
@@ -75,6 +78,7 @@ body {
 
 .exp-container{
   display: flex;
+  margin: 8px 2px;
 }
 
 .line {
@@ -98,4 +102,38 @@ body {
 
 .exp-container-inner{
   display: flex;
+}
+
+.tech-stack-container{
+  width: 80%;
+}
+
+.exp-container-inner-right{
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-stack{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  list-style: none;
+  color: #f2f2f2;
+}
+
+.tech-stack-items{
+  background-color: #333;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+
+.tech-stack-items:hover{
+  transform:translateY(-2px);
+}
+
+.right h2 {
+  padding: 0;
+  margin: 0;
 }
