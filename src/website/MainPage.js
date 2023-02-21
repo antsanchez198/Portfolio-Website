@@ -6,12 +6,14 @@ export default function MainPage() {
     return (
         <>
             <NavBar />
-            <h1 className="margin">Anthony Sanchez</h1>
             <div className="container">
+                <div className="container-left">
+                    <h1 className="margin title">Anthony Sanchez</h1>
+                    <p className='paragraph'>Front End Developer</p>
+                </div>
                 <img className="img" src="/myheadshot.png"></img>
-                <p className='paragraph'>A hands on, detail orientated, and professional Web Developer with entry-level experience in HTML, CSS and React. Who’s
-                    motivated to contribute to large scale projects with a proven track record of developing polished and creative user interfaces.</p>
             </div>
+
             <div className='exp-container margin'>
                 <div className='left'><h1>Professional Experience</h1></div>
                 <div className='line'></div>
@@ -36,11 +38,11 @@ export default function MainPage() {
             <div className="project-section">
                 <h1 className="margin">Projects</h1>
                 <div className="cards-container">
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
                 </div>
             </div>
             <h1>Skills</h1>
