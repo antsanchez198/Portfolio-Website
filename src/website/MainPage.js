@@ -6,12 +6,16 @@ export default function MainPage() {
     return (
         <>
             <NavBar />
-            <div className="container">
-                <div className="container-left">
-                    <h1 className="margin title">Anthony Sanchez</h1>
-                    <p className='paragraph'>Front End Developer</p>
+            <div className="intro">
+                <div className="container">
+                    <div className="container-left">
+                        <h1 className="margin">Hi, my name is <strong className="title">Anthony Sanchez</strong></h1>
+                        <p className='paragraph'>Front End Developer</p>
+                    </div>
+                    <div className="container-right">
+                    <img className="img" src="/myheadshot.png"></img>
+                    </div>
                 </div>
-                <img className="img" src="/myheadshot.png"></img>
             </div>
 
             <div className='exp-container margin'>

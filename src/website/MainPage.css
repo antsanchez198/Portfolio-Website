@@ -9,6 +9,7 @@ body {
 :root {
   --main-color: #234E70;
   --second-color: #FFFFED;
+  --yellow-color: #E3B448;
   --font: Verdana;
 
 }
@@ -40,22 +41,33 @@ body {
   color: #FBF8BE;
 }
 
-.container {
+.intro{
   background-color: var(--main-color);
   width: 100%;
   height: 90%;
   font-family: var(--font);
   text-align: center;
   color: var(--second-color);
+  padding: 7%;
+}
+
+.container {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto auto;
-  padding: 5%;
+  grid-template-columns: 60% 40%;
+  width: 70%;
+  gap: 50px;
 }
 
 .container-left{
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
+}
+
+.container-right{
+  width: 100%;
+  margin: 0 auto;
+  padding: 5%;
 }
 
 .img {
@@ -71,6 +83,8 @@ body {
   width: 90%;
   text-align: center;
   margin: 20px auto;
+  background-color: var(--yellow-color);
+  font-size: 30px;
 }
 
 h1 {
@@ -91,7 +105,7 @@ h1 {
 }
 
 .line {
-  background-color: #E3B448;
+  background-color: var(--yellow-color);
   height: auto;
   width: 10px;
   margin: 10px 0;
@@ -149,7 +163,7 @@ h1 {
 
 /* Project Container */
 .project-section{
-  background-color: #E3B448;
+  background-color: var(--yellow-color);
   text-align: center;
 }
 
