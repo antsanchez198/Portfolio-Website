@@ -1,10 +1,17 @@
 import './MainPage.css';
 
-export default function Card() {
+export default function Card(props) {
     return (
-        <div className="card">
-            <h2>Title</h2>
-            <img src="https://cdn.theatlantic.com/media/mt/science/cat_caviar.jpg"></img>
+        <div class="card-wrapper">
+            <div class="card-top">
+                <img class="image" src={props.image}/>
+            </div>
+
+            <div class="card-bottom">
+                <div class="top-text">{props.title}</div>
+                <div class="bottom-text">{props.desc}</div>
+                <button class="button">Join Us</button>
+            </div>
         </div>
     )
 }
