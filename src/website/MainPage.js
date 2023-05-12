@@ -120,8 +120,6 @@ export default function MainPage() {
                         title="Yelp Couple Helper"
                         desc="Built a full-stack web app that allows two users decide where they want to eat with the help of Yelp's API"
                     />
-                    <div class="card-wrapper">
-                    </div>
                 </div>
             </div>
             <h1>Skills</h1>

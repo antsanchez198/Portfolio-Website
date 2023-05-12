@@ -115,13 +115,14 @@ body {
 .homepage-socials {
   align-items: center;
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
+  gap: 20px;
   padding-top: 30px;
 }
 
 .homepage-social-icon {
-  padding-right: 20px;
-  font-size: 25px;
+  /* padding-right: 20px; */
+  font-size: 30px;
   transition: color 0.2s ease-in-out;
   color: white;
 }
@@ -294,27 +295,21 @@ h1 {
 }
 
 .top-text {
-  font-size: 25px;
+  font-size: 40px;
   line-height: 40px;
   font-weight: bold;
   letter-spacing: 1px
 }
 
 .bottom-text {
-  font-size: 15px;
-
+  font-size: 25px;
+  margin-top: 20px;
 }
 
-
-.button {
-  position: relative;
-  display: block;
-  outline: none;
-  cursor: pointer;
-  margin-top: 25px;
-  border: none;
-  border-radius: 3px;
-  background-color: #f8961e;
-  color: #ffffff;
-  padding: 5px 20px
+.bottom-button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
