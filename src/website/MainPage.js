@@ -78,7 +78,7 @@ export default function MainPage() {
                                 <li className='tech-stack-items'>
                                     <FontAwesomeIcon
                                         icon={faReact}
-                                        className="homepage-social-icon"
+                                        className="homepage-social-icon blue"
                                     /></li>
                                 <li className='tech-stack-items'>
                                     <FontAwesomeIcon
@@ -92,8 +92,6 @@ export default function MainPage() {
                                         className="homepage-social-icon"
                                     />
                                 </li>
-                                <li className='tech-stack-items'>React Redux</li>
-                                <li className='tech-stack-items'>Material-UI</li>
                             </ul>
                         </div>
                     </div>
@@ -103,23 +101,37 @@ export default function MainPage() {
             </div>
             <div className="project-section">
                 <h1 className="margin">Projects</h1>
-                <div className="cards-container">
+                <div className="cards-container margin">
                     <Card
                         image={TTP}
                         title="Restuarant Website"
                         desc="Built a fullstack web application for a local business"
+                        projectLink="https://ttp-capstone-project.netlify.app/"
+                        sourceLink="https://github.com/antsanchez198/Restaurant-Backend"
                     />
                     <Card
                         image={Task}
                         title="Task Tracker App"
                         desc="Built a full-stack web app to allow users to create and track tasks across
                         multiple accounts"
+                        projectLink="https://dev.d1k8dokfdo58j9.amplifyapp.com/"
+                        sourceLink="https://github.com/ya-miao/task-tracker"
                     />
                     <Card
                         image={Yelp}
                         title="Yelp Couple Helper"
                         desc="Built a full-stack web app that allows two users decide where they want to eat with the help of Yelp's API"
+                        projectLink="https://lighthall-hangman-coral.vercel.app/"
+                        sourceLink="https://github.com/ya-miao/lighthall-hangman"
                     />
+                    <Card
+                        image={Yelp}
+                        title="Yelp Couple Helper"
+                        desc="Built a full-stack web app that allows two users decide where they want to eat with the help of Yelp's API"
+                        projectLink="https://lighthall-hangman-coral.vercel.app/"
+                        sourceLink="https://github.com/ya-miao/lighthall-hangman"
+                    />
+
                 </div>
             </div>
             <h1>Skills</h1>

@@ -16,13 +16,21 @@ export default function Card(props) {
                 <div class="top-text">{props.title}</div>
                 <div class="bottom-text">{props.desc}</div>
                 <div className='bottom-button-container'>
-                    <a>
+                    <a
+                         href={props.projectLink}
+                                target="_blank"
+                                rel="noreferrer"
+                    >
                         <FontAwesomeIcon
                             icon={faLink}
                             className="homepage-social-icon"
                         />
                     </a>
-                    <a>
+                    <a
+                         href={props.sourceLink}
+                                target="_blank"
+                                rel="noreferrer"
+                    >
                         <FontAwesomeIcon
                             icon={faGithub}
                             className="homepage-social-icon"
