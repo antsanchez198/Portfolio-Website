@@ -13,6 +13,7 @@ import {
 import Task from "./images/Task Tracker.jpg";
 import Yelp from "./images/Yelp.jpg";
 import TTP from "./images/ttp.jpg";
+import checkIcon from "./images/circle-check-solid.svg"
 
 export default function MainPage() {
     return (
@@ -21,7 +22,7 @@ export default function MainPage() {
             <div className="intro">
                 <div className="container">
                     <div className="container-left">
-                        <div className="title homepage-title">
+                        <div className="title homepage-title ">
                             Frontend Web Developer
                         </div>
                         <div className="subtitle homepage-subtitle">
@@ -66,41 +67,52 @@ export default function MainPage() {
                 </div>
             </div>
 
-            <div className='exp-container margin'>
-                <div className='left'><h1>Professional Experience</h1></div>
-                <div className='line'></div>
-                <div className='right'>
-                    <h2>Knomadix</h2>
-                    <div className='exp-container-inner'>
-                        <h3 className='exp-container-inner-left'><i>Front End Developer Intern</i></h3>
-                        <div className='exp-container-inner-right'>
-                            <ul className='tech-stack'>
-                                <li className='tech-stack-items'>
-                                    <FontAwesomeIcon
-                                        icon={faReact}
-                                        className="homepage-social-icon blue"
-                                    /></li>
-                                <li className='tech-stack-items'>
-                                    <FontAwesomeIcon
-                                        icon={faHtml5}
-                                        className="homepage-social-icon"
-                                    />
-                                </li>
-                                <li className='tech-stack-items'>
-                                    <FontAwesomeIcon
-                                        icon={faCss3}
-                                        className="homepage-social-icon"
-                                    />
-                                </li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-top'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <div className='exp-container'>
+                <h1>Professional Experience</h1>
+                <div className='exp-container-inner'>
+                    <div className='left'>
+                        <h1>Knomadix</h1>
+                        <h4><i>Front End Developer Intern</i></h4>
+                    </div>
+                    <div className='right'>
+                        <div>
+                            <img src={checkIcon}></img>
+                            <p>Creatively designed and developed two responsive layouts using React, HTML, and CSS which improved the readability of information presented to end users by 30%</p>
+                        </div>
+                        <div>
+                            <img src={checkIcon}></img>
+                            <p>Collaborated closely with both backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
+                        </div>
+                        <div>
+                            <img src={checkIcon}></img>
+                            <p>Collaborated closely with both backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
+                        </div>
+                        <div>
+                            <img src={checkIcon}></img>
+                            <p>Handled and manipulated JSON Data accordingly to best display assignment and subscription details on tables, graphs, and dashboards using Material UI components</p>
+                        </div>
+                        <div>
+                            <img src={checkIcon}></img>
+                            <p>Set up interactive forms using JavaScript from the UI and utilized APIs to successfully update subscription plans, notifications, and school and user information</p>
+                        </div>
+                        <div>
+                            <ul className='exp-tech-stack'>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Material UI</li>
                             </ul>
                         </div>
                     </div>
-                    <p>Designed and built new responsive layouts and features for an educational based startup company named Knomadix using React.js, HTML,
-                        and CSS. Who's mission is to transform how students learn using Artificial Intelligence to leverage insights from assignments to help create personalized lesson plans.</p>
                 </div>
+
             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-bottom'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+
             <div className="project-section">
-                <h1 className="margin">Projects</h1>
+                <h1 className="projects-title">Projects</h1>
                 <div className="cards-container margin">
                     <Card
                         image={TTP}
