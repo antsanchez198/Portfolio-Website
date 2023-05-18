@@ -15,6 +15,7 @@ export default function Card(props) {
             <div class="card-bottom">
                 <div class="top-text">{props.title}</div>
                 <div class="bottom-text">{props.desc}</div>
+                <div class="bottom-text">{props.techStack}</div>
                 <div className='bottom-button-container'>
                     <a
                          href={props.projectLink}
