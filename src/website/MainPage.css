@@ -143,6 +143,11 @@ body {
   color: #f06529;
 }
 
+.purple {
+  font-weight: bold;
+}
+
+
 h1 {
   text-align: center;
   margin: 10px;
@@ -272,7 +277,7 @@ h1 {
 /* Project Container */
 .project-section {
   text-align: center;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 200px auto;
 }
 
 .projects-title {
@@ -361,8 +366,8 @@ h1 {
   display: nonee;
   top: 50%;
   background-color: rgba(178, 178, 178, 0);
-  padding: 70px 20px;
-  color: #ffffff;
+  padding: 50px 20px;
+  color: #333;
   transform: translate(100%, -50%);
 }
 
@@ -376,6 +381,13 @@ h1 {
 .bottom-text {
   font-size: 20px;
   margin-top: 20px;
+}
+
+.background {
+  background-color: var(--second-color);
+  border-radius: 20px;
+  border: 2px solid #333;
+  padding: 0.25rem;
 }
 
 .bottom-button-container {
@@ -424,7 +436,7 @@ h1 {
 
 .skills-section-item-tech {
   max-width: 250px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 /* contact section */
@@ -455,12 +467,12 @@ h1 {
   gap: 10px;
 }
 
-.fieldset input {
-  height: calc(1.5em + 0.75rem + 2px);
+.form-control {
+  /* height: calc(1.5em + 0.75rem + 2px); */
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  display: block;
+  /* display: block; */
   /* border-radius: 10px; */
 }

@@ -6,9 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faLinkedin,
     faGithub,
-    faReact,
-    faHtml5,
-    faCss3,
 } from "@fortawesome/free-brands-svg-icons";
 import Task from "./images/Task Tracker.jpg";
 import Yelp from "./images/Yelp.jpg";
@@ -119,7 +116,7 @@ export default function MainPage() {
                         image={TTP}
                         title="Restuarant Website"
                         desc="Fullstack web application for a local business (In Progress)"
-                        techStack="[React, Javascript, Node, Express, ProgresSQL, Bootstrap]"
+                        techStack="React, Javascript, Node, Express, ProgresSQL, Bootstrap"
                         projectLink="https://ttp-capstone-project.netlify.app/"
                         sourceLink="https://github.com/antsanchez198/Restaurant-Backend"
                     />
@@ -127,7 +124,7 @@ export default function MainPage() {
                         image={Yelp}
                         title="Yelp Couple Helper"
                         desc="Full-stack web app that helps two users decide where to eat using Yelp's API"
-                        techStack="[AWS Amplify, GraphSQL, React, MaterialUI]"
+                        techStack="AWS Amplify, GraphSQL, React, MaterialUI"
                         projectLink="https://lighthall-hangman-coral.vercel.app/"
                         sourceLink="https://github.com/ya-miao/lighthall-couple-yelp"
                     />
@@ -135,7 +132,7 @@ export default function MainPage() {
                         image={Hangman}
                         title="Hangman Game"
                         desc="Full-stack web app based on the popular game: Hangman"
-                        techStack="[AWS Amplify, GraphSQL, React, MaterialUI]"
+                        techStack="AWS Amplify, GraphSQL, React, MaterialUI"
                         projectLink="https://lighthall-hangman-coral.vercel.app/hangman"
                         sourceLink="https://github.com/ya-miao/lighthall-hangman"
                     />
@@ -144,7 +141,7 @@ export default function MainPage() {
                         title="Task Tracker App"
                         desc="Full-stack web app which allows users to create and track tasks across
                         multiple accounts"
-                        techStack="[AWS Amplify, GraphSQL, React, MaterialUI]"
+                        techStack="AWS Amplify, GraphSQL, React, MaterialUI"
                         projectLink="https://dev.d1k8dokfdo58j9.amplifyapp.com/"
                         sourceLink="https://github.com/ya-miao/task-tracker"
                     />
@@ -152,7 +149,7 @@ export default function MainPage() {
                         image={Click}
                         title="Click Counter"
                         desc="Full-stack web app that uses the Geolocation API to get user's location and display the amount of clicks from that location"
-                        techStack="[Firebase, React, Javascript]"
+                        techStack="Firebase, React, Javascript"
                         projectLink="https://main--stirring-daffodil-67d04b.netlify.app/"
                         sourceLink="https://github.com/antsanchez198/Lighthall-Challenge-1"
                     />
@@ -160,7 +157,7 @@ export default function MainPage() {
                         image={CRUD}
                         title="CRUD Application"
                         desc="My first web app that can create, read, update and delete items (Not Deployed)"
-                        techStack="[React, Javascript, Node, Express, ProgresSQL]"
+                        techStack="React, Javascript, Node, Express, ProgresSQL"
                         // projectLink="https://main--stirring-daffodil-67d04b.netlify.app/"
                         sourceLink="https://github.com/antsanchez198/TTP-CRUD"
                     />
@@ -212,10 +209,10 @@ export default function MainPage() {
                     <form className='contact-section-inner column'>
                         <h2>Get In Contact</h2>
                         <fieldset className='fieldset column'>
-                            <input type="text" name="" placeholder='First and Last Name' id=''></input>
-                            <input type="email" name="" placeholder='Email' id=''></input>
-                            <input type="text" name="" placeholder='Subject' id=''></input>
-                            <textarea></textarea>
+                            <input class="form-control" type="text" name="" placeholder='First and Last Name' id=''></input>
+                            <input class="form-control" type="email" name="" placeholder='Email' id=''></input>
+                            <input class="form-control"type="text" name="" placeholder='Subject' id=''></input>
+                            <textarea class="form-control" rows="5" name="message" id="message" placeholder="Message"></textarea>
                         </fieldset>
                     </form>
                 </div>
