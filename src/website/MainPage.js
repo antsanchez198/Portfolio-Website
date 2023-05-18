@@ -13,7 +13,9 @@ import {
 import Task from "./images/Task Tracker.jpg";
 import Yelp from "./images/Yelp.jpg";
 import TTP from "./images/ttp.jpg";
-import checkIcon from "./images/circle-check-solid.svg"
+import Hangman from "./images/Hangman.jpg";
+import Click from "./images/Click.jpg";
+import checkIcon from "./images/circle-check-solid.svg";
 
 export default function MainPage() {
     return (
@@ -122,6 +124,20 @@ export default function MainPage() {
                         sourceLink="https://github.com/antsanchez198/Restaurant-Backend"
                     />
                     <Card
+                        image={Yelp}
+                        title="Yelp Couple Helper"
+                        desc="Built a full-stack web app that allows two users decide where they want to eat with the help of Yelp's API"
+                        projectLink="https://lighthall-hangman-coral.vercel.app/"
+                        sourceLink="https://github.com/ya-miao/lighthall-couple-yelp"
+                    />
+                    <Card
+                        image={Hangman}
+                        title="Hangman Game"
+                        desc="Built a full-stack web app based on the popular game: Hangman"
+                        projectLink="https://lighthall-hangman-coral.vercel.app/hangman"
+                        sourceLink="https://github.com/ya-miao/lighthall-hangman"
+                    />
+                    <Card
                         image={Task}
                         title="Task Tracker App"
                         desc="Built a full-stack web app to allow users to create and track tasks across
@@ -130,20 +146,12 @@ export default function MainPage() {
                         sourceLink="https://github.com/ya-miao/task-tracker"
                     />
                     <Card
-                        image={Yelp}
+                        image={Click}
                         title="Yelp Couple Helper"
                         desc="Built a full-stack web app that allows two users decide where they want to eat with the help of Yelp's API"
-                        projectLink="https://lighthall-hangman-coral.vercel.app/"
-                        sourceLink="https://github.com/ya-miao/lighthall-hangman"
+                        projectLink="https://main--stirring-daffodil-67d04b.netlify.app/"
+                        sourceLink="https://github.com/antsanchez198/Lighthall-Challenge-1"
                     />
-                    <Card
-                        image={Yelp}
-                        title="Yelp Couple Helper"
-                        desc="Built a full-stack web app that allows two users decide where they want to eat with the help of Yelp's API"
-                        projectLink="https://lighthall-hangman-coral.vercel.app/"
-                        sourceLink="https://github.com/ya-miao/lighthall-hangman"
-                    />
-
                 </div>
             </div>
             <h1>Skills</h1>
