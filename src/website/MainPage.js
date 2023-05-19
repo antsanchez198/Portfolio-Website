@@ -19,7 +19,7 @@ export default function MainPage() {
     return (
         <>
             <NavBar />
-            <div className="intro">
+            <div className="intro"  id="home">
                 <div className="container">
                     <div className="container-left">
                         <div className="title homepage-title ">
@@ -68,7 +68,7 @@ export default function MainPage() {
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-top'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-            <div className='exp-container'>
+            <div className='exp-container' id="experience">
                 <h1>Professional Experience</h1>
                 <div className='exp-container-inner'>
                     <div className='left'>
@@ -109,7 +109,7 @@ export default function MainPage() {
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-bottom'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
-            <div className="project-section">
+            <div className="project-section" id="projects">
                 <h1 className="projects-title">Projects</h1>
                 <div className="cards-container margin">
                     <Card
@@ -139,8 +139,7 @@ export default function MainPage() {
                     <Card
                         image={Task}
                         title="Task Tracker App"
-                        desc="Full-stack web app which allows users to create and track tasks across
-                        multiple accounts"
+                        desc="Full-stack web app which allows users to create and track tasks"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
                         projectLink="https://dev.d1k8dokfdo58j9.amplifyapp.com/"
                         sourceLink="https://github.com/ya-miao/task-tracker"
@@ -148,7 +147,7 @@ export default function MainPage() {
                     <Card
                         image={Click}
                         title="Click Counter"
-                        desc="Full-stack web app that uses the Geolocation API to get user's location and display the amount of clicks from that location"
+                        desc="Full-stack web app that uses the Geolocation API to get user's location and display click amount"
                         techStack="Firebase, React, Javascript"
                         projectLink="https://main--stirring-daffodil-67d04b.netlify.app/"
                         sourceLink="https://github.com/antsanchez198/Lighthall-Challenge-1"
@@ -163,7 +162,7 @@ export default function MainPage() {
                     />
                 </div>
             </div>
-            <div className='skills-section'>
+            <div className='skills-section' id="skills">
                 <h1>Skills</h1>
                 <div className='skills-section-container'>
                     <div className='skills-section-item'>
@@ -205,7 +204,7 @@ export default function MainPage() {
                     </div>
                 </div>
             </div>
-            <div className='contact-section'>
+            <div className='contact-section' id="contact">
                     <form className='contact-section-inner column'>
                         <h2>Get In Contact</h2>
                         <fieldset className='fieldset column'>
