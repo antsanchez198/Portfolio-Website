@@ -361,7 +361,7 @@ h1 {
   /* transition: box-shadow .5s; */
 }
 
-.card-wrapper:hover {
+.card-wrapper:hover, .card-wrapper:active{
   .image {
     filter: blur(1.4px);
     overflow: hidden;
@@ -512,12 +512,16 @@ h1 {
     flex-direction: column;
   }
 
-}
+  .right {
+    margin: 10px 0 30px 0;
+  }
 
-@media (max-width: 1016px) {
   .container {
     flex-direction: column-reverse;
   }
+}
+
+@media (max-width: 1016px) {
 
   .container-right {
     align-items: flex-start;
@@ -569,5 +573,10 @@ h1 {
 @media (max-width: 390px) {
   .card-wrapper, .card-bottom {
     width: 300px;
+  }
+
+  .topnav {
+    display: none;
+    margin: 0;
   }
 }
