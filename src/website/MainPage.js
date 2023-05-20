@@ -207,15 +207,16 @@ export default function MainPage() {
                 </div>
             </div>
             <div className='contact-section' id="contact">
-                    <form className='contact-section-inner column'>
-                        <h2 className='underline'>Get In Contact</h2>
-                        <fieldset className='fieldset column'>
-                            <input class="form-control" type="text" name="" placeholder='First and Last Name' id=''></input>
-                            <input class="form-control" type="email" name="" placeholder='Email' id=''></input>
-                            <input class="form-control"type="text" name="" placeholder='Subject' id=''></input>
-                            <textarea class="form-control" rows="5" name="message" id="message" placeholder="Message"></textarea>
-                        </fieldset>
-                    </form>
+                    <div className='contact-section-inner column'>
+                        <h2 className='underline'>Get In Touch</h2>
+                        <form className='fieldset column' action='https://formspree.io/f/mzbqqpdo' method="POST">
+                            <input class="form-control" type="text" name="Name" placeholder='First and Last Name' id=''required></input>
+                            <input class="form-control" type="email" name="Email" placeholder='Email' id='' required></input>
+                            <input class="form-control"type="text" name="Subject" placeholder='Subject' id='' required></input>
+                            <textarea class="form-control" rows="5" name="Message" id="message" placeholder="Message" required></textarea>
+                            <button type='submit'>Send Message</button>
+                        </form>
+                    </div>
                 </div>
         </>
 

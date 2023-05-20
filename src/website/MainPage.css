@@ -525,6 +525,20 @@ h1 {
   /* border-radius: 10px; */
 }
 
+.fieldset button {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  margin: 20px auto 0 auto;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  background-color: var(--yellow-color);
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
 @media (max-width: 1042px) {
   .cards-container {
     grid-template-columns: auto auto;
