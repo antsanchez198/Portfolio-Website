@@ -1,7 +1,7 @@
 import './MainPage.css';
 import NavBar from './NavBar';
 import Card from './Card';
-import { faMailBulk, faFile} from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faLinkedin,
@@ -15,16 +15,34 @@ import Click from "./images/Click.jpg";
 import CRUD from "./images/CRUD.jpg";
 import file from "./images/file-solid.svg"
 import checkIcon from "./images/circle-check-solid.svg";
+import { useEffect } from 'react';
 
 export default function MainPage() {
+
+    useEffect(() => {
+        const slideElements = document.querySelectorAll('.hidden');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting);
+                if (entry.isIntersecting) { observer.unobserve(entry.target); }
+            })
+        })
+
+        slideElements.forEach(element => {
+            observer.observe(element)
+        })
+    });
+
+
     return (
         <>
             <NavBar />
-            <div className="intro"  id="home">
+            <div className="intro" id="home">
                 <div className="container">
                     <div className="container-left">
                         <div className="title homepage-title ">
-                            Hi, 
+                            Hi,
                             <div>I'm Anthony Sanchez</div>
                         </div>
                         <div className="subtitle homepage-subtitle">
@@ -56,7 +74,7 @@ export default function MainPage() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                 <FontAwesomeIcon
+                                <FontAwesomeIcon
                                     icon={faFile}
                                     className="homepage-social-icon"
                                 />
@@ -78,23 +96,23 @@ export default function MainPage() {
                         <h4><i>Front End Developer Intern</i></h4>
                     </div>
                     <div className='right'>
-                        <div>
+                        <div className='hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Creatively designed and developed two responsive layouts using React, HTML, and CSS which improved the readability of information presented to end users by 30%</p>
                         </div>
-                        <div>
+                        <div className='hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Collaborated closely with both backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
                         </div>
-                        <div>
+                        <div className='hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Collaborated closely with both backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
                         </div>
-                        <div>
+                        <div className='hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Handled and manipulated JSON Data accordingly to best display assignment and subscription details on tables, graphs, and dashboards using Material UI components</p>
                         </div>
-                        <div>
+                        <div className='hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Set up interactive forms using JavaScript from the UI and utilized APIs to successfully update subscription plans, notifications, and school and user information</p>
                         </div>
@@ -167,7 +185,7 @@ export default function MainPage() {
             <div className='skills-section' id="skills">
                 <h1 className='underline'>Skills</h1>
                 <div className='skills-section-container'>
-                    <div className='skills-section-item'>
+                    <div className='skills-section-item frontend hidden'>
                         <h2>Frontend</h2>
                         <div className='line'></div>
                         <div className='skills-section-item-tech'>
@@ -181,7 +199,7 @@ export default function MainPage() {
 
                         </div>
                     </div>
-                    <div className='skills-section-item'>
+                    <div className='skills-section-item backend hidden'>
                         <h2>Backend</h2>
                         <div className='line'></div>
                         <div className='skills-section-item-tech'>
@@ -193,11 +211,11 @@ export default function MainPage() {
                             <img alt="python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&amp;logo=python&amp;logoColor=white"></img>
                         </div>
                     </div>
-                    <div className='skills-section-item'>
+                    <div className='skills-section-item database hidden'>
                         <h2>Databases and Servers</h2>
                         <div className='line'></div>
                         <div className='skills-section-item-tech'>
-                            <img alt="firebase" src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&amp;logo=firebase&amp;logoColor=black"/>
+                            <img alt="firebase" src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&amp;logo=firebase&amp;logoColor=black" />
                             <img alt="mysql" src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"></img>
                             <img alt="postgres" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white"></img>
                             <img alt="heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&amp;logo=heroku&amp;logoColor=white"></img>
@@ -207,17 +225,17 @@ export default function MainPage() {
                 </div>
             </div>
             <div className='contact-section' id="contact">
-                    <div className='contact-section-inner column'>
-                        <h2 className='underline'>Get In Touch</h2>
-                        <form className='fieldset column' action='https://formspree.io/f/mzbqqpdo' method="POST">
-                            <input class="form-control" type="text" name="Name" placeholder='First and Last Name' id=''required></input>
-                            <input class="form-control" type="email" name="Email" placeholder='Email' id='' required></input>
-                            <input class="form-control"type="text" name="Subject" placeholder='Subject' id='' required></input>
-                            <textarea class="form-control" rows="5" name="Message" id="message" placeholder="Message" required></textarea>
-                            <button type='submit'>Send Message</button>
-                        </form>
-                    </div>
+                <div className='contact-section-inner column'>
+                    <h2 className='underline'>Get In Touch</h2>
+                    <form className='fieldset column' action='https://formspree.io/f/mzbqqpdo' method="POST">
+                        <input class="form-control" type="text" name="Name" placeholder='First and Last Name' id='' required></input>
+                        <input class="form-control" type="email" name="Email" placeholder='Email' id='' required></input>
+                        <input class="form-control" type="text" name="Subject" placeholder='Subject' id='' required></input>
+                        <textarea class="form-control" rows="5" name="Message" id="message" placeholder="Message" required></textarea>
+                        <button type='submit'>Send Message</button>
+                    </form>
                 </div>
+            </div>
         </>
 
     )

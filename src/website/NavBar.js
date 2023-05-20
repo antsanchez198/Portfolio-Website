@@ -8,7 +8,7 @@ export default function NavBar() {
                 <img src={Menu}></img>
             </div> */}
             <div class="topnav">
-                <a class="active" href="#home">Home</a>
+                <a class="active" href="#home">Intro</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>

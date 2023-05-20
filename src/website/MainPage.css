@@ -176,7 +176,7 @@ body {
 
 .homepage-social-icon {
   font-size: 30px;
-  transition: color 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   color: #f0f1f3;
 }
 
@@ -479,7 +479,14 @@ h1 {
   background-color: var(--yellow-color);
   color: #333;
   box-shadow: 10px 10px #333;
-  transition: box-shadow .5s;
+}
+
+.backend {
+  transition: all 2s !important;
+}
+
+.database {
+  transition: all 3s !important;
 }
 
 .skills-section-item-tech {
@@ -648,4 +655,14 @@ h1 {
   .topnav a::after {
     background-color: transparent;
   }
+}
+
+/* Transitions */
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
 }
