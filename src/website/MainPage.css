@@ -135,7 +135,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 20%;
-  /* transform: rotate(3deg); */
+  transform: rotate(3deg);
   border: var(--yellow-color) 2px solid;
 }
 
