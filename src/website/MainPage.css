@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -21,6 +23,10 @@ body {
   --light-yellow-color: #f7e6bf;
   --font: Verdana;
 
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* Add a black background color to the top navigation */
@@ -81,6 +87,20 @@ body {
   color: var(--yellow-color);
 }
 
+/* .hamburger-container, .hamburger-container img {
+  display: none;
+} */
+
+.hamburger-container {
+  padding: 1rem;
+  background-color: var(--yellow-color);
+}
+
+.hamburger-container img {
+  width: 30px;
+  height: 30px;
+}
+
 .intro {
   font-family: var(--font);
   text-align: center;
@@ -110,9 +130,11 @@ body {
 }
 
 .img {
-  width: 100%;
+  /* width: 100%; */
+  width: 300px;
+  height: 300px;
   border-radius: 20%;
-  transform: rotate(3deg);
+  /* transform: rotate(3deg); */
   border: var(--yellow-color) 2px solid;
 }
 
@@ -154,7 +176,7 @@ body {
 .homepage-social-icon {
   font-size: 30px;
   transition: color 0.2s ease-in-out;
-  color: var(--second-color);
+  color: #f0f1f3;
 }
 
 .light-blue {
@@ -172,7 +194,6 @@ body {
 .purple {
   font-weight: bold;
 }
-
 
 h1 {
   text-align: center;
@@ -209,7 +230,6 @@ h1 {
 
 .wave-bottom {
   transform: translate(0, -1%) rotate(180deg);
-  ;
   z-index: 1;
 }
 
@@ -361,7 +381,7 @@ h1 {
   /* transition: box-shadow .5s; */
 }
 
-.card-wrapper:hover, .card-wrapper:active{
+.card-wrapper:hover, .card-wrapper:focus{
   .image {
     filter: blur(1.4px);
     overflow: hidden;
@@ -373,6 +393,7 @@ h1 {
     transition: all 0.8s ease;
     /* background-color: rgba(147, 147, 147, 0.832); */
     background-color: var(--yellow-color);
+    z-index: 1;
     /* background-color: #5f445f; */
   }
 }
@@ -524,7 +545,7 @@ h1 {
 @media (max-width: 1016px) {
 
   .container-right {
-    align-items: flex-start;
+    width: 60%;
   }
 
   .exp-tech-stack {
@@ -575,8 +596,37 @@ h1 {
     width: 300px;
   }
 
+  .container-right {
+    width: 100%;
+  }
+
+  .container-right img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
   .topnav {
-    display: none;
+    opacity: 1;
     margin: 0;
+    display: flex;
+    width: 100%;
+    border-radius: 0;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+
+  .topnav a {
+    font-size: 13.5px;
+    padding: 0;
+  }
+
+  .topnav a::after {
+    background-color: transparent;
   }
 }

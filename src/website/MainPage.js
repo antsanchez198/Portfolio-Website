@@ -1,7 +1,7 @@
 import './MainPage.css';
 import NavBar from './NavBar';
 import Card from './Card';
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faFile} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faLinkedin,
@@ -13,6 +13,7 @@ import TTP from "./images/ttp.jpg";
 import Hangman from "./images/Hangman.jpg";
 import Click from "./images/Click.jpg";
 import CRUD from "./images/CRUD.jpg";
+import file from "./images/file-solid.svg"
 import checkIcon from "./images/circle-check-solid.svg";
 
 export default function MainPage() {
@@ -23,10 +24,11 @@ export default function MainPage() {
                 <div className="container">
                     <div className="container-left">
                         <div className="title homepage-title ">
-                            Frontend Web Developer
+                            Hi, 
+                            <div>I'm Anthony Sanchez</div>
                         </div>
                         <div className="subtitle homepage-subtitle">
-                            I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.
+                            I am a Frontend developer with expertise in React. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.
                         </div>
                         <div className="homepage-socials">
                             <a
@@ -50,12 +52,12 @@ export default function MainPage() {
                                 />
                             </a>
                             <a
-                                // href={`mailto:${INFO.main.email}`}
+                                href="https://drive.google.com/file/d/1QkG7QeuOVXY1q-MVh91cyeZKP3hYRiCA/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FontAwesomeIcon
-                                    icon={faMailBulk}
+                                 <FontAwesomeIcon
+                                    icon={faFile}
                                     className="homepage-social-icon"
                                 />
                             </a>
@@ -69,7 +71,7 @@ export default function MainPage() {
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-top'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
             <div className='exp-container' id="experience">
-                <h1>Professional Experience</h1>
+                <h1 className='underline'>Experience</h1>
                 <div className='exp-container-inner'>
                     <div className='left'>
                         <h1>Knomadix</h1>
@@ -110,7 +112,7 @@ export default function MainPage() {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-bottom'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
             <div className="project-section" id="projects">
-                <h1 className="projects-title">Projects</h1>
+                <h1 className="projects-title underline">Projects</h1>
                 <div className="cards-container margin">
                     <Card
                         image={TTP}
@@ -163,7 +165,7 @@ export default function MainPage() {
                 </div>
             </div>
             <div className='skills-section' id="skills">
-                <h1>Skills</h1>
+                <h1 className='underline'>Skills</h1>
                 <div className='skills-section-container'>
                     <div className='skills-section-item'>
                         <h2>Frontend</h2>
@@ -206,7 +208,7 @@ export default function MainPage() {
             </div>
             <div className='contact-section' id="contact">
                     <form className='contact-section-inner column'>
-                        <h2>Get In Contact</h2>
+                        <h2 className='underline'>Get In Contact</h2>
                         <fieldset className='fieldset column'>
                             <input class="form-control" type="text" name="" placeholder='First and Last Name' id=''></input>
                             <input class="form-control" type="email" name="" placeholder='Email' id=''></input>

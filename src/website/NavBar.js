@@ -1,9 +1,12 @@
 import './MainPage.css';
+import Menu from "./images/bars-solid.svg"
 
 export default function NavBar() {
     return (
         <>
-            <div></div>
+            {/* <div className='hamburger-container'>
+                <img src={Menu}></img>
+            </div> */}
             <div class="topnav">
                 <a class="active" href="#home">Home</a>
                 <a href="#experience">Experience</a>
