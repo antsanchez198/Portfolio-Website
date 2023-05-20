@@ -539,6 +539,10 @@ h1 {
   cursor: pointer;
 }
 
+.fieldset button:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 @media (max-width: 1042px) {
   .cards-container {
     grid-template-columns: auto auto;
