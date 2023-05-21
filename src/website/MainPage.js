@@ -70,7 +70,7 @@ export default function MainPage() {
                                 />
                             </a>
                             <a
-                                href="https://drive.google.com/file/d/1QkG7QeuOVXY1q-MVh91cyeZKP3hYRiCA/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1g4akhUjAk9rye0WHrsEyjunAbezDHqgb/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
                             >
