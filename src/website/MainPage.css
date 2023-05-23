@@ -571,6 +571,10 @@ dialog {
   width: 500px;
 }
 
+.dialog-inner a {
+  display: none;
+}
+
 .dialog-image {
   width: 100%;
   height: auto;

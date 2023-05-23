@@ -37,22 +37,22 @@ export default function Card(props) {
                 <div className='dialog-inner'>
                     <div class="top-text">{props.title}</div>
                     <a
-                                href={props.projectLink}
-                                target="_blank"
-                                rel="noreferrer"
-                                title="View Project"
-                            >
-                                {/* <FontAwesomeIcon
+                        href={props.projectLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        title="View Project"
+                    >
+                        {/* <FontAwesomeIcon
                                     icon={faLink}
                                     className="homepage-social-icon yellow"
                                 /> */}
-                                <img class="dialog-image" src={props.image} />
-                            </a>
+                        <img class="dialog-image" src={props.image} />
+                    </a>
                     <div className='dialog-bottom-section'>
                         <div class="bottom-text ">{props.desc}</div>
                         <div className='exp-tech-stack-dialog'>
                             {props.stack.map((src) => {
-                                {return <img alt="redux" src={src} />}
+                                { return <img alt="redux" src={src} /> }
                             })}
                         </div>
                         <div className='bottom-button-container '>
