@@ -34,6 +34,26 @@ export default function MainPage() {
         })
     });
 
+    const pernStack = [
+        "https://camo.githubusercontent.com/67a01fa7cf337616274f39c070a11638f2e65720e414ef55b8dd3f9c2a803b2a/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d526561637426636f6c6f723d323232323232266c6f676f3d5265616374266c6f676f436f6c6f723d363144414642266c6162656c3d",
+        "https://camo.githubusercontent.com/faec9d89bd2c7d47b91d988dcd0f27011c27e8191d45836cfa36bf2b3c2a92bd/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4e6f64652e6a7326636f6c6f723d333339393333266c6f676f3d4e6f64652e6a73266c6f676f436f6c6f723d464646464646266c6162656c3d",
+        "https://camo.githubusercontent.com/0a95585d6b3a07028298a45d60b85a1331358bc336549d64dbbc27977f1495f3/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4578707265737326636f6c6f723d303030303030266c6f676f3d45787072657373266c6f676f436f6c6f723d464646464646266c6162656c3d",
+        "https://camo.githubusercontent.com/95a15266c9b093e9070410fa62c8dcba6611e79edd738e0ded7ec5b52541d6c4/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d506f737467726553514c26636f6c6f723d343136394531266c6f676f3d506f737467726553514c266c6f676f436f6c6f723d464646464646266c6162656c3d",
+        "https://camo.githubusercontent.com/3aaee8bf7885dcf0cea8a5647c4514b7d800b1a730d38bce7dadf6bff883378d/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4a61766153637269707426636f6c6f723d323232323232266c6f676f3d4a617661536372697074266c6f676f436f6c6f723d463744463145266c6162656c3d"
+    ]
+
+    const challengesStack = [
+        "https://camo.githubusercontent.com/67a01fa7cf337616274f39c070a11638f2e65720e414ef55b8dd3f9c2a803b2a/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d526561637426636f6c6f723d323232323232266c6f676f3d5265616374266c6f676f436f6c6f723d363144414642266c6162656c3d",
+        "https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&amp;logo=material-ui&amp;logoColor=white",
+        "https://camo.githubusercontent.com/ed77a28768e0711948d83722fca374fe74caffab09386432c81d69d31ee834b5/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4157532b416d706c69667926636f6c6f723d323232323232266c6f676f3d4157532b416d706c696679266c6f676f436f6c6f723d464639393030266c6162656c3d",
+        "https://camo.githubusercontent.com/2e1f2dc091af830685d2057c2d4c797b639c7d1601a8d6019629272c210b707b/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4772617068514c26636f6c6f723d453130303938266c6f676f3d4772617068514c266c6f676f436f6c6f723d464646464646266c6162656c3d"
+    ]
+
+    const clickCounterStack = [
+        "https://camo.githubusercontent.com/67a01fa7cf337616274f39c070a11638f2e65720e414ef55b8dd3f9c2a803b2a/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d526561637426636f6c6f723d323232323232266c6f676f3d5265616374266c6f676f436f6c6f723d363144414642266c6162656c3d",
+        "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&amp;logo=firebase&amp;logoColor=black",
+        "https://camo.githubusercontent.com/3aaee8bf7885dcf0cea8a5647c4514b7d800b1a730d38bce7dadf6bff883378d/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4a61766153637269707426636f6c6f723d323232323232266c6f676f3d4a617661536372697074266c6f676f436f6c6f723d463744463145266c6162656c3d"
+    ]
 
     return (
         <>
@@ -134,49 +154,61 @@ export default function MainPage() {
                 <div className="cards-container margin">
                     <Card
                         image={TTP}
+                        id="1"
                         title="Restuarant Website"
                         desc="Fullstack web application for a local business (In Progress)"
                         techStack="React, Javascript, Node, Express, ProgresSQL, Bootstrap"
+                        stack={pernStack}
                         projectLink="https://ttp-capstone-project.netlify.app/"
                         sourceLink="https://github.com/antsanchez198/Restaurant-Backend"
                     />
                     <Card
                         image={Yelp}
+                        id="2"
                         title="Yelp Couple Helper"
                         desc="Full-stack web app that helps two users decide where to eat using Yelp's API"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
+                        stack={challengesStack}
                         projectLink="https://lighthall-hangman-coral.vercel.app/"
                         sourceLink="https://github.com/ya-miao/lighthall-couple-yelp"
                     />
                     <Card
                         image={Hangman}
+                        id="3"
                         title="Hangman Game"
-                        desc="Full-stack web app based on the popular game: Hangman"
+                        desc="Full-stack web app of Hangman"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
+                        stack={challengesStack}
                         projectLink="https://lighthall-hangman-coral.vercel.app/hangman"
                         sourceLink="https://github.com/ya-miao/lighthall-hangman"
                     />
                     <Card
                         image={Task}
+                        id="4"
                         title="Task Tracker App"
                         desc="Full-stack web app which allows users to create and track tasks"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
+                        stack={challengesStack}
                         projectLink="https://dev.d1k8dokfdo58j9.amplifyapp.com/"
                         sourceLink="https://github.com/ya-miao/task-tracker"
                     />
                     <Card
                         image={Click}
+                        id="5"
                         title="Click Counter"
                         desc="Full-stack web app that uses the Geolocation API to get user's location and display click amount"
                         techStack="Firebase, React, Javascript"
+                        stack={clickCounterStack}
                         projectLink="https://main--stirring-daffodil-67d04b.netlify.app/"
                         sourceLink="https://github.com/antsanchez198/Lighthall-Challenge-1"
                     />
                     <Card
                         image={CRUD}
+                        id="6"
                         title="CRUD Application"
                         desc="My first web app that can create, read, update and delete items (Not Deployed)"
                         techStack="React, Javascript, Node, Express, ProgresSQL"
+                        stack={pernStack}
                         // projectLink="https://main--stirring-daffodil-67d04b.netlify.app/"
                         sourceLink="https://github.com/antsanchez198/TTP-CRUD"
                     />
