@@ -93,6 +93,7 @@ export default function MainPage() {
                                 href="https://drive.google.com/file/d/1g4akhUjAk9rye0WHrsEyjunAbezDHqgb/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
+                                title="View Resume"
                             >
                                 <FontAwesomeIcon
                                     icon={faFile}

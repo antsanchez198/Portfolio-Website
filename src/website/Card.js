@@ -1,8 +1,6 @@
 import './MainPage.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from 'react';
 
@@ -38,23 +36,27 @@ export default function Card(props) {
             <dialog id={props.desc}>
                 <div className='dialog-inner'>
                     <div class="top-text">{props.title}</div>
-                    <img class="dialog-image" src={props.image} />
+                    <a
+                                href={props.projectLink}
+                                target="_blank"
+                                rel="noreferrer"
+                                title="View Project"
+                            >
+                                {/* <FontAwesomeIcon
+                                    icon={faLink}
+                                    className="homepage-social-icon yellow"
+                                /> */}
+                                <img class="dialog-image" src={props.image} />
+                            </a>
                     <div className='dialog-bottom-section'>
                         <div class="bottom-text ">{props.desc}</div>
-                        {/* <div class="bottom-text border background">{props.techStack}</div> */}
                         <div className='exp-tech-stack-dialog'>
-                            {/* <img alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"></img>
-                            <img alt="redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&amp;logo=redux&amp;logoColor=white" />
-                            <img alt="materialUI" src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&amp;logo=material-ui&amp;logoColor=white"></img>
-                            <img alt="javascript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E" />
-                            <img alt="html5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" />
-                            <img alt="css3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"></img> */}
                             {props.stack.map((src) => {
                                 {return <img alt="redux" src={src} />}
                             })}
                         </div>
                         <div className='bottom-button-container '>
-                            <a
+                            {/* <a
                                 href={props.projectLink}
                                 target="_blank"
                                 rel="noreferrer"
@@ -63,11 +65,12 @@ export default function Card(props) {
                                     icon={faLink}
                                     className="homepage-social-icon yellow"
                                 />
-                            </a>
+                            </a> */}
                             <a
                                 href={props.sourceLink}
                                 target="_blank"
                                 rel="noreferrer"
+                                title="Source Code"
                             >
                                 <FontAwesomeIcon
                                     icon={faGithub}
