@@ -572,7 +572,7 @@ dialog {
 }
 
 .dialog-inner a {
-  display: none;
+  border: none;
 }
 
 .dialog-image {
@@ -605,6 +605,14 @@ dialog {
 
 .fieldset button:hover{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.align-img-left {
+  object-position: -30px;
+}
+
+.align-hangman {
+  object-position: -100px;
 }
 
 @media (max-width: 1042px) {

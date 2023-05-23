@@ -30,7 +30,7 @@ export default function Card(props) {
         <>
             <div class="card-wrapper" id={props.title}>
                 <div class="card-top">
-                    <img class="image" src={props.image} />
+                    <img class={"image " + props.class} src={props.image} />
                 </div>
             </div>
             <dialog id={props.desc}>

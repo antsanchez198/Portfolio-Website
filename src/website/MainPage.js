@@ -7,10 +7,10 @@ import {
     faLinkedin,
     faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import Task from "./images/Task Tracker.jpg";
-import Yelp from "./images/Yelp.jpg";
-import TTP from "./images/ttp.jpg";
-import Hangman from "./images/Hangman.jpg";
+import Task from "./images/Task Tracker.png";
+import Yelp from "./images/Yelp.png";
+import TTP from "./images/ttp.png";
+import Hangman from "./images/Hangman.png";
 import Click from "./images/Click.jpg";
 import CRUD from "./images/CRUD.jpg";
 import file from "./images/file-solid.svg"
@@ -156,6 +156,7 @@ export default function MainPage() {
                     <Card
                         image={TTP}
                         id="1"
+                        class="align-img-left"
                         title="Restuarant Website"
                         desc="Fullstack web application for a local business (In Progress)"
                         techStack="React, Javascript, Node, Express, ProgresSQL, Bootstrap"
@@ -166,16 +167,18 @@ export default function MainPage() {
                     <Card
                         image={Yelp}
                         id="2"
+                        class=""
                         title="Yelp Couple Helper"
                         desc="Full-stack web app that helps two users decide where to eat using Yelp's API"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
                         stack={challengesStack}
-                        projectLink="https://lighthall-hangman-coral.vercel.app/"
+                        projectLink="https://dev.d31kctbuv485tm.amplifyapp.com/"
                         sourceLink="https://github.com/ya-miao/lighthall-couple-yelp"
                     />
                     <Card
                         image={Hangman}
                         id="3"
+                        class="align-hangman"
                         title="Hangman Game"
                         desc="Full-stack web app of Hangman"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
@@ -186,6 +189,7 @@ export default function MainPage() {
                     <Card
                         image={Task}
                         id="4"
+                        class="align-img-left"
                         title="Task Tracker App"
                         desc="Full-stack web app which allows users to create and track tasks"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
@@ -196,6 +200,7 @@ export default function MainPage() {
                     <Card
                         image={Click}
                         id="5"
+                        class=""
                         title="Click Counter"
                         desc="Full-stack web app that uses the Geolocation API to get user's location and display click amount"
                         techStack="Firebase, React, Javascript"
@@ -206,6 +211,7 @@ export default function MainPage() {
                     <Card
                         image={CRUD}
                         id="6"
+                        class=""
                         title="CRUD Application"
                         desc="My first web app that can create, read, update and delete items (Not Deployed)"
                         techStack="React, Javascript, Node, Express, ProgresSQL"
