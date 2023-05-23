@@ -36,18 +36,18 @@ export default function Card(props) {
             <dialog id={props.desc}>
                 <div className='dialog-inner'>
                     <div class="top-text">{props.title}</div>
-                    <a
+                    {/* <a
                         href={props.projectLink}
                         target="_blank"
                         rel="noreferrer"
                         title="View Project"
-                    >
+                    > */}
                         {/* <FontAwesomeIcon
                                     icon={faLink}
                                     className="homepage-social-icon yellow"
                                 /> */}
                         <img class="dialog-image" src={props.image} />
-                    </a>
+                    {/* </a> */}
                     <div className='dialog-bottom-section'>
                         <div class="bottom-text ">{props.desc}</div>
                         <div className='exp-tech-stack-dialog'>
@@ -56,7 +56,7 @@ export default function Card(props) {
                             })}
                         </div>
                         <div className='bottom-button-container '>
-                            {/* <a
+                            <a
                                 href={props.projectLink}
                                 target="_blank"
                                 rel="noreferrer"
@@ -65,7 +65,7 @@ export default function Card(props) {
                                     icon={faLink}
                                     className="homepage-social-icon yellow"
                                 />
-                            </a> */}
+                            </a>
                             <a
                                 href={props.sourceLink}
                                 target="_blank"

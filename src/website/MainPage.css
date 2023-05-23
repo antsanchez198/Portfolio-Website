@@ -19,7 +19,7 @@ body {
 :root {
   --main-color: #234E70;
   --second-color: #FFFFED;
-  --yellow-color: #e3b54a;
+  --yellow-color: #e3b54ae2;
   --light-yellow-color: #f7e6bf;
   --font: Verdana;
   --light-grey: #f0f1f3;
@@ -253,7 +253,7 @@ h1 {
   /* background-color: var(--light-yellow-color); */
   border-radius: 0 30px 30px 0px;
   /* border-left: 2px solid #333; */
-  background-color: var(--yellow-color);
+  background-color: transparent;
 }
 
 .right div {

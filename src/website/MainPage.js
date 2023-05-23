@@ -1,7 +1,7 @@
 import './MainPage.css';
 import NavBar from './NavBar';
 import Card from './Card';
-import { faMailBulk, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faFilePdf} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faLinkedin,
@@ -96,7 +96,7 @@ export default function MainPage() {
                                 title="View Resume"
                             >
                                 <FontAwesomeIcon
-                                    icon={faFile}
+                                    icon={faFilePdf}
                                     className="homepage-social-icon"
                                 />
                             </a>
