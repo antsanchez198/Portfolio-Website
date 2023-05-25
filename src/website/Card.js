@@ -59,11 +59,12 @@ export default function Card(props) {
                             <a
                                 href={props.projectLink}
                                 target="_blank"
+                                title="View Project"
                                 rel="noreferrer"
                             >
                                 <FontAwesomeIcon
                                     icon={faLink}
-                                    className="homepage-social-icon yellow"
+                                    className="homepage-social-icon black"
                                 />
                             </a>
                             <a
@@ -74,7 +75,7 @@ export default function Card(props) {
                             >
                                 <FontAwesomeIcon
                                     icon={faGithub}
-                                    className="homepage-social-icon yellow"
+                                    className="homepage-social-icon black"
                                 />
                             </a>
                         </div>

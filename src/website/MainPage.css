@@ -16,6 +16,44 @@ body {
   padding: 0;
 }
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sneakInRight {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes sneakInBottom {
+  0% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 :root {
   --main-color: #234E70;
   --second-color: #FFFFED;
@@ -26,7 +64,7 @@ body {
 }
 
 .underline {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* Add a black background color to the top navigation */
@@ -184,7 +222,7 @@ body {
   color: #00a0dc;
 }
 
-.yellow {
+.black {
   color: #333;
 }
 
@@ -480,6 +518,7 @@ h1 {
   background-color: var(--yellow-color);
   color: #333;
   box-shadow: 10px 10px #333;
+  /* transform: translateY(125px); */
 }
 
 .backend {
@@ -509,18 +548,20 @@ h1 {
 .contact-section-inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 50px 20px;
   text-align: center;
+  font-family: inherit;
   /* border: none; */
 }
 
 .fieldset {
   border: none;
-  margin: 0 auto;
+  margin: 15px auto 0 auto;
   width: 70%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+
 }
 
 .form-control {
@@ -539,12 +580,19 @@ h1 {
   padding: 10px 20px;
   margin: 20px auto 0 auto;
   border-radius: 15px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   color: #333;
   background-color: var(--yellow-color);
   border: 2px solid #333;
   cursor: pointer;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+.fieldset button:hover{
+  transform: translateY(2px);
 }
 
 /* dialog */
@@ -562,6 +610,7 @@ dialog {
   padding: 0;
   height: fit-content;
   overflow: hidden;
+  animation: bounceIn 0.8s;
 }
 
 .dialog-inner {
@@ -601,10 +650,6 @@ dialog {
   color: #333;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-
-.fieldset button:hover{
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .align-img-left {
@@ -729,9 +774,55 @@ dialog {
 /* Transitions */
 .hidden {
     opacity: 0;
-    transition: all 1.5s;
 }
 
-.show {
-    opacity: 1;
+.bounceIn {
+  opacity: 1;
+  animation: bounceIn 1s;
 }
+
+.frontend {
+  opacity: 1;
+  animation: sneakInBottom 1s;
+}
+
+.backend {
+  opacity: 1;
+  animation: sneakInBottom 1.5s;
+}
+
+.database {
+  opacity: 1;
+  animation: sneakInBottom 2s;
+}
+
+.firstLogo1 {
+  opacity: 1;
+  animation: sneakInRight 1s;
+}
+
+.secondLogo2 {
+  opacity: 1;
+  animation: sneakInRight 1.3s;
+}
+
+.thirdLogo3 {
+  opacity: 1;
+  animation: sneakInRight 1.6s;
+}
+
+.forthLogo4 {
+  opacity: 1;
+  animation: sneakInRight 1.7s;
+}
+
+.fifthLogo5 {
+  opacity: 1;
+  animation: sneakInRight 1.8s;
+}
+
+.sixthLogo6{
+  opacity: 1;
+  animation: sneakInRight 2s;
+}
+

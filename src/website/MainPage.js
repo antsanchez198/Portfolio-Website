@@ -1,7 +1,7 @@
 import './MainPage.css';
 import NavBar from './NavBar';
 import Card from './Card';
-import { faMailBulk, faFilePdf} from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faLinkedin,
@@ -24,7 +24,36 @@ export default function MainPage() {
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting);
+                if (entry.target.className.includes("exp-container-inner")) {
+                    entry.target.classList.toggle("bounceIn", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("first") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("frontend", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("second") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("backend", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("third") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("database", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("firstLogo") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("firstLogo1", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("secondLogo") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("secondLogo2", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("thirdLogo") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("thirdLogo3", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("forthLogo") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("forthLogo4", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("fifthLogo") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("fifthLogo5", entry.isIntersecting);
+                }
+                if (entry.target.className.includes("sixthLogo") || entry.target.className.includes("box")) {
+                    entry.target.classList.toggle("sixthLogo6", entry.isIntersecting);
+                }
                 if (entry.isIntersecting) { observer.unobserve(entry.target); }
             })
         })
@@ -111,39 +140,39 @@ export default function MainPage() {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-top'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
             <div className='exp-container' id="experience">
                 <h1 className='underline'>Experience</h1>
-                <div className='exp-container-inner'>
+                <div className='exp-container-inner hidden'>
                     <div className='left'>
                         <h1>Knomadix</h1>
                         <h4><i>Front End Developer Intern</i></h4>
                     </div>
                     <div className='right'>
-                        <div className='hidden'>
+                        <div>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Creatively designed and developed two responsive layouts using React, HTML, and CSS which improved the readability of information presented to end users by 30%</p>
                         </div>
-                        <div className='hidden'>
+                        <div>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Collaborated closely with both backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
                         </div>
-                        <div className='hidden'>
+                        <div>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Collaborated closely with both backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
                         </div>
-                        <div className='hidden'>
+                        <div>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Handled and manipulated JSON Data accordingly to best display assignment and subscription details on tables, graphs, and dashboards using Material UI components</p>
                         </div>
-                        <div className='hidden'>
+                        <div>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Set up interactive forms using JavaScript from the UI and utilized APIs to successfully update subscription plans, notifications, and school and user information</p>
                         </div>
                         <div className='exp-tech-stack'>
-                            <img alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"></img>
-                            <img alt="redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&amp;logo=redux&amp;logoColor=white" />
-                            <img alt="materialUI" src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&amp;logo=material-ui&amp;logoColor=white"></img>
-                            <img alt="javascript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E" />
-                            <img alt="html5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" />
-                            <img alt="css3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"></img>
+                            <img className="firstLogo hidden" alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"></img>
+                            <img className="secondLogo hidden" alt="redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&amp;logo=redux&amp;logoColor=white" />
+                            <img className="thirdLogo hidden" alt="materialUI" src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&amp;logo=material-ui&amp;logoColor=white"></img>
+                            <img className="forthLogo hidden" alt="javascript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E" />
+                            <img className="fifthLogo hidden" alt="html5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" />
+                            <img className="sixthLogo hidden" alt="css3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"></img>
                         </div>
                     </div>
                 </div>
@@ -224,7 +253,7 @@ export default function MainPage() {
             <div className='skills-section' id="skills">
                 <h1 className='underline'>Skills</h1>
                 <div className='skills-section-container'>
-                    <div className='skills-section-item frontend hidden'>
+                    <div className='skills-section-item hidden first'>
                         <h2>Frontend</h2>
                         <div className='line'></div>
                         <div className='skills-section-item-tech'>
@@ -238,7 +267,7 @@ export default function MainPage() {
 
                         </div>
                     </div>
-                    <div className='skills-section-item backend hidden'>
+                    <div className='skills-section-item hidden second'>
                         <h2>Backend</h2>
                         <div className='line'></div>
                         <div className='skills-section-item-tech'>
@@ -250,7 +279,7 @@ export default function MainPage() {
                             <img alt="python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&amp;logo=python&amp;logoColor=white"></img>
                         </div>
                     </div>
-                    <div className='skills-section-item database hidden'>
+                    <div className='skills-section-item hidden third'>
                         <h2>Databases and Servers</h2>
                         <div className='line'></div>
                         <div className='skills-section-item-tech'>
@@ -265,7 +294,7 @@ export default function MainPage() {
             </div>
             <div className='contact-section' id="contact">
                 <div className='contact-section-inner column'>
-                    <h2 className='underline'>Get In Touch</h2>
+                    <h1 className='underline'>Get In Touch</h1>
                     <form className='fieldset column' action='https://formspree.io/f/mzbqqpdo' method="POST">
                         <input class="form-control" type="text" name="Name" placeholder='First and Last Name' id='' required></input>
                         <input class="form-control" type="email" name="Email" placeholder='Email' id='' required></input>
