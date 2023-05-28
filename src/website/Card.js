@@ -22,6 +22,21 @@ export default function Card(props) {
             favDialog.close();
             document.body.style.overflowY = "auto";
         });
+
+        const slideElements = document.querySelectorAll('.fadeIn');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.target.className.includes("card-top")) {
+                    entry.target.classList.toggle("show", entry.isIntersecting);
+                }
+                if (entry.isIntersecting) { observer.unobserve(entry.target); }
+            })
+        })
+
+        slideElements.forEach(element => {
+            observer.observe(element)
+        })
     });
 
     const stack = props.stack;
@@ -29,7 +44,7 @@ export default function Card(props) {
     return (
         <>
             <div class="card-wrapper" id={props.title}>
-                <div class="card-top">
+                <div className="card-top fadeIn">
                     <img class={"image " + props.class} src={props.image} />
                 </div>
             </div>
@@ -42,11 +57,11 @@ export default function Card(props) {
                         rel="noreferrer"
                         title="View Project"
                     > */}
-                        {/* <FontAwesomeIcon
+                    {/* <FontAwesomeIcon
                                     icon={faLink}
                                     className="homepage-social-icon yellow"
                                 /> */}
-                        <img class="dialog-image" src={props.image} />
+                    <img class="dialog-image" src={props.image} />
                     {/* </a> */}
                     <div className='dialog-bottom-section'>
                         <div class="bottom-text ">{props.desc}</div>

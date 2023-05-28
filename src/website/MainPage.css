@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   background: hsla(155, 23%, 71%, 1);
   background: linear-gradient(90deg, hsla(155, 23%, 71%, 1) 0%, #5f445f 100%);
@@ -57,7 +62,7 @@ body {
 :root {
   --main-color: #234E70;
   --second-color: #FFFFED;
-  --yellow-color: #e3b54ae2;
+  --yellow-color: #e3b54ac8;
   --light-yellow-color: #f7e6bf;
   --font: Verdana;
   --light-grey: #f0f1f3;
@@ -375,7 +380,7 @@ h1 {
   grid-template-columns: auto auto auto;
   /* gap: 50px; */
   background-color: #333;
-  padding: 0.5rem;
+  padding: 0.25rem;
   gap: 0.25rem;
 }
 
@@ -580,7 +585,7 @@ h1 {
   padding: 10px 20px;
   margin: 20px auto 0 auto;
   border-radius: 15px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
   background-color: var(--yellow-color);
@@ -774,6 +779,15 @@ dialog {
 /* Transitions */
 .hidden {
     opacity: 0;
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.show {
+  opacity: 1;
 }
 
 .bounceIn {
