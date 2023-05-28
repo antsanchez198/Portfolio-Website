@@ -66,6 +66,7 @@ body {
   --light-yellow-color: #f7e6bf;
   --font: Verdana;
   --light-grey: #f0f1f3;
+  --bright-yellow: #e3b54a;
 }
 
 .underline {
@@ -78,10 +79,15 @@ body {
   overflow: hidden;
   width: fit-content;
   margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   border-radius: 50px;
   margin-top: 20px;
   padding: 0 1rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Style the links inside the navigation bar */
@@ -106,7 +112,7 @@ body {
   transition: all 0.2s;
   height: 2px;
   width: 80%;
-  background-color: var(--yellow-color);
+  background-color: var(--bright-yellow);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -120,29 +126,8 @@ body {
   opacity: 1;
 }
 
-/* Change the color of links on hover */
-/* .topnav a:hover {
-  color: FBF8BE;
-  font-weight: bold;
-} */
-
-/* Add a color to the active/current link */
 .topnav a.active {
-  color: var(--yellow-color);
-}
-
-/* .hamburger-container, .hamburger-container img {
-  display: none;
-} */
-
-.hamburger-container {
-  padding: 1rem;
-  background-color: var(--yellow-color);
-}
-
-.hamburger-container img {
-  width: 30px;
-  height: 30px;
+  color: var(--bright-yellow);
 }
 
 .intro {
@@ -155,7 +140,7 @@ body {
   display: flex;
   align-items: center;
   max-width: 1080px;
-  margin: 120px auto 60px auto;
+  margin: 160px auto 60px auto;
   gap: 100px;
 }
 
@@ -179,7 +164,7 @@ body {
   height: 300px;
   border-radius: 20%;
   transform: rotate(3deg);
-  border: var(--yellow-color) 2px solid;
+  border: var(--bright-yellow) 2px solid;
 }
 
 .paragraph {

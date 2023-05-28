@@ -2,6 +2,7 @@ import './MainPage.css';
 import Menu from "./images/bars-solid.svg"
 
 export default function NavBar() {
+
     return (
         <>
             {/* <div className='hamburger-container'>

@@ -27,31 +27,31 @@ export default function MainPage() {
                 if (entry.target.className.includes("exp-container-inner")) {
                     entry.target.classList.toggle("bounceIn", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("first") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("first")) {
                     entry.target.classList.toggle("frontend", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("second") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("second")) {
                     entry.target.classList.toggle("backend", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("third") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("third")) {
                     entry.target.classList.toggle("database", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("firstLogo") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("firstLogo")) {
                     entry.target.classList.toggle("firstLogo1", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("secondLogo") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("secondLogo")) {
                     entry.target.classList.toggle("secondLogo2", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("thirdLogo") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("thirdLogo")) {
                     entry.target.classList.toggle("thirdLogo3", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("forthLogo") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("forthLogo")) {
                     entry.target.classList.toggle("forthLogo4", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("fifthLogo") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("fifthLogo")) {
                     entry.target.classList.toggle("fifthLogo5", entry.isIntersecting);
                 }
-                if (entry.target.className.includes("sixthLogo") || entry.target.className.includes("box")) {
+                if (entry.target.className.includes("sixthLogo")) {
                     entry.target.classList.toggle("sixthLogo6", entry.isIntersecting);
                 }
                 if (entry.isIntersecting) { observer.unobserve(entry.target); }
@@ -60,6 +60,30 @@ export default function MainPage() {
 
         slideElements.forEach(element => {
             observer.observe(element)
+        })
+
+        const tabs = document.querySelectorAll(".tab")
+        const pages = document.querySelectorAll(".page")
+        const scrollToTop = document.querySelector(".scrollToTop")
+
+        const tabObserver = new IntersectionObserver((entries, tabObserver) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log(entry.target);
+                    const index = Array.from(pages).indexOf(entry.target)
+                    tabs.forEach(tab => {
+                        tab.classList.remove("active")
+                    })
+                    tabs[index].classList.add("active")
+                }
+            })
+        }, {
+            threshold: 0.25,
+        })
+
+
+        pages.forEach(page => {
+            tabObserver.observe(page)
         })
     });
 
@@ -86,8 +110,14 @@ export default function MainPage() {
 
     return (
         <>
-            <NavBar />
-            <div className="intro" id="home">
+            <div class="topnav">
+                <a className="tab" href="#intro">Intro</a>
+                <a className='tab' href="#experience">Experience</a>
+                <a className='tab' href="#projects">Projects</a>
+                <a className='tab' href="#skills">Skills</a>
+                <a className='tab' href="#contact">Contact</a>
+            </div>
+            <div className="intro page" id="intro">
                 <div className="container">
                     <div className="container-left">
                         <div className="title homepage-title ">
@@ -138,7 +168,7 @@ export default function MainPage() {
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-top'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-            <div className='exp-container' id="experience">
+            <div className='exp-container page' id="experience">
                 <h1 className='underline'>Experience</h1>
                 <div className='exp-container-inner hidden'>
                     <div className='left'>
@@ -179,7 +209,7 @@ export default function MainPage() {
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-bottom'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
-            <div className="project-section" id="projects">
+            <div className="project-section page" id="projects">
                 <h1 className="projects-title underline">Projects</h1>
                 <div className="cards-container margin">
                     <Card
@@ -250,7 +280,7 @@ export default function MainPage() {
                     />
                 </div>
             </div>
-            <div className='skills-section' id="skills">
+            <div className='skills-section page' id="skills">
                 <h1 className='underline'>Skills</h1>
                 <div className='skills-section-container'>
                     <div className='skills-section-item hidden first'>
@@ -292,7 +322,7 @@ export default function MainPage() {
                     </div>
                 </div>
             </div>
-            <div className='contact-section' id="contact">
+            <div className='contact-section page' id="contact">
                 <div className='contact-section-inner column'>
                     <h1 className='underline'>Get In Touch</h1>
                     <form className='fieldset column' action='https://formspree.io/f/mzbqqpdo' method="POST">
