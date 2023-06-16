@@ -54,6 +54,9 @@ export default function MainPage() {
                 if (entry.target.className.includes("sixthLogo")) {
                     entry.target.classList.toggle("sixthLogo6", entry.isIntersecting);
                 }
+                if (entry.target.className.includes("bullets-hidden")) {
+                    entry.target.classList.toggle("show", entry.isIntersecting);
+                }
                 if (entry.isIntersecting) { observer.unobserve(entry.target); }
             })
         })
@@ -149,7 +152,7 @@ export default function MainPage() {
                                 />
                             </a>
                             <a
-                                href="https://drive.google.com/file/d/1g4akhUjAk9rye0WHrsEyjunAbezDHqgb/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1doytwuCjWV9NVxFdZsW_nSuSWoCYDKEB/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
                                 title="View Resume"
@@ -176,23 +179,23 @@ export default function MainPage() {
                         <h4><i>Front End Developer Intern</i></h4>
                     </div>
                     <div className='right'>
-                        <div>
+                        <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Creatively designed and developed two responsive layouts using React, HTML, and CSS which improved the readability of information presented to end users by 30%</p>
                         </div>
-                        <div>
+                        <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Collaborated closely with both backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
                         </div>
-                        <div>
+                        <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Collaborated closely with both backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
                         </div>
-                        <div>
+                        <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Handled and manipulated JSON Data accordingly to best display assignment and subscription details on tables, graphs, and dashboards using Material UI components</p>
                         </div>
-                        <div>
+                        <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Set up interactive forms using JavaScript from the UI and utilized APIs to successfully update subscription plans, notifications, and school and user information</p>
                         </div>

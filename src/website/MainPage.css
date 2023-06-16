@@ -164,7 +164,7 @@ body {
   height: 300px;
   border-radius: 20%;
   transform: rotate(3deg);
-  border: var(--bright-yellow) 2px solid;
+  border: var(--bright-yellow) 3px solid;
 }
 
 .paragraph {
@@ -577,12 +577,12 @@ h1 {
   border: 2px solid #333;
   cursor: pointer;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
 
 }
 
 .fieldset button:hover{
-  transform: translateY(2px);
+  transform: translateY(1px);
 }
 
 /* dialog */
@@ -769,6 +769,11 @@ dialog {
 .fadeIn {
   opacity: 0;
   transition: all 1.5s;
+}
+
+.bullets-hidden {
+  opacity: 0;
+  transition: all 2s;
 }
 
 .show {
