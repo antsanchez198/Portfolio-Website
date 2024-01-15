@@ -282,6 +282,7 @@ h1 {
   border-radius: 0 30px 30px 0px;
   /* border-left: 2px solid #333; */
   background-color: transparent;
+  font-weight: 600;
 }
 
 .right div {
@@ -598,7 +599,7 @@ dialog {
   background-color: var(--light-grey);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 0;
-  height: fit-content;
+  height: max-content;
   overflow: hidden;
   animation: bounceIn 0.8s;
 }
