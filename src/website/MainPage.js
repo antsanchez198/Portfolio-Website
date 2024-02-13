@@ -9,11 +9,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Task from "./images/Task Tracker.png";
 import Yelp from "./images/Yelp.png";
-import TTP from "./images/ttp.png";
+import Realtor from "./images/Realtor.jpg";
 import Hangman from "./images/Hangman.png";
-import Click from "./images/Click.jpg";
-import CRUD from "./images/CRUD.jpg";
-import file from "./images/file-solid.svg"
 import checkIcon from "./images/circle-check-solid.svg";
 import { useEffect } from 'react';
 
@@ -90,13 +87,9 @@ export default function MainPage() {
         })
     });
 
-    const pernStack = [
+    const firebaseStack = [
         "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-        "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
-        "https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white",
-        "https://img.shields.io/badge/Express.js-404D59?style=for-the-badge",
-        "https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white",
-        "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white",
+        "https://img.shields.io/badge/Firebase-FE7A16?style=for-the-badge&logo=firebase&logoColor=white",
     ]
 
     const challengesStack = [
@@ -153,7 +146,7 @@ export default function MainPage() {
                                 />
                             </a>
                             <a
-                                href="https://drive.google.com/file/d/1doytwuCjWV9NVxFdZsW_nSuSWoCYDKEB/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1MGceoywocVhxLkqClKNNLxQO-nzCQQbM/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
                                 title="View Resume"
@@ -210,23 +203,19 @@ export default function MainPage() {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave-bottom'><path fill="#FFFFFF" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,234.7C840,245,960,171,1080,165.3C1200,160,1320,224,1380,256L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
             <div className="project-section page" id="projects">
-                <h1 className="projects-title underline">Projects</h1>
+                <h1 className="projects-title">Projects</h1>
                 <div className="cards-container margin">
                     <Card
-                        image={TTP}
-                        id="1"
-                        class="align-img-left"
-                        title="Restuarant Website"
-                        desc="Fullstack web application for a local business (In Progress)"
-                        techStack="React, Javascript, Node, Express, ProgresSQL, Bootstrap"
-                        stack={pernStack}
-                        projectLink="https://ttp-capstone-project.netlify.app/"
-                        sourceLink="https://github.com/antsanchez198/Restaurant-Backend"
+                        image={Realtor}
+                        title="Realtor Clone"
+                        desc="Clone Website of Realtor.com Website which demonstrates CRUD functionality and User Authentication"
+                        techStack="React, Firebase"
+                        stack={firebaseStack}
+                        projectLink="https://realtor-clone-react-blue.vercel.app/"
+                        sourceLink="https://github.com/antsanchez198/realtor-clone-react"
                     />
                     <Card
                         image={Yelp}
-                        id="2"
-                        class=""
                         title="Yelp Couple Helper"
                         desc="Full-stack web app that helps two users decide where to eat using Yelp's API"
                         techStack="AWS Amplify, GraphQL, React, MaterialUI"
@@ -236,8 +225,6 @@ export default function MainPage() {
                     />
                     <Card
                         image={Hangman}
-                        id="3"
-                        class="align-hangman"
                         title="Hangman Game"
                         desc="Full-stack web app of Hangman"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
@@ -247,36 +234,12 @@ export default function MainPage() {
                     />
                     <Card
                         image={Task}
-                        id="4"
-                        class="align-img-left"
                         title="Task Tracker App"
                         desc="Full-stack web app which allows users to create and track tasks"
                         techStack="AWS Amplify, GraphSQL, React, MaterialUI"
                         stack={challengesStack}
                         projectLink="https://dev.d1k8dokfdo58j9.amplifyapp.com/"
                         sourceLink="https://github.com/ya-miao/task-tracker"
-                    />
-                    <Card
-                        image={Click}
-                        id="5"
-                        class=""
-                        title="Click Counter"
-                        desc="Full-stack web app that uses the Geolocation API to get user's location and display click amount"
-                        techStack="Firebase, React, Javascript"
-                        stack={clickCounterStack}
-                        projectLink="https://main--stirring-daffodil-67d04b.netlify.app/"
-                        sourceLink="https://github.com/antsanchez198/Lighthall-Challenge-1"
-                    />
-                    <Card
-                        image={CRUD}
-                        id="6"
-                        class=""
-                        title="CRUD Application"
-                        desc="My first web app that can create, read, update and delete items (Not Deployed)"
-                        techStack="React, Javascript, Node, Express, ProgresSQL"
-                        stack={pernStack}
-                        // projectLink="https://main--stirring-daffodil-67d04b.netlify.app/"
-                        sourceLink="https://github.com/antsanchez198/TTP-CRUD"
                     />
                 </div>
             </div>
