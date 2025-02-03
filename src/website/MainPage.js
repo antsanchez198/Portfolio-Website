@@ -169,17 +169,50 @@ export default function MainPage() {
                 <h1 className='underline'>Experience</h1>
                 <div className='exp-container-inner hidden'>
                     <div className='left'>
+                        <h1>Develop for Good</h1>
+                        <h4><i>Front End Developer Volunteer</i></h4>
+                    </div>
+                    <div className='right'>
+                        <div className='bullets-hidden hidden'>
+                            <img src={checkIcon} className='checkIcon'></img>
+                            <p>Contribute to NeighborShare’s web application, a nonprofit tech platform designed to empower donors in
+                            supporting households facing urgent financial needs</p>
+                        </div>
+                        <div className='bullets-hidden hidden'>
+                            <img src={checkIcon} className='checkIcon'></img>
+                            <p>CDevelop dynamic landing pages utilizing React Components to create targeted landing pages for sponsors,
+                            enabling them to focus donations on specific geographies or needs, resulting in a 18% increase in contributions</p>
+                        </div>
+                        <div className='bullets-hidden hidden'>
+                            <img src={checkIcon} className='checkIcon'></img>
+                            <p>Collaborated with fellow engineers to implement an enhanced filtering mechanism that allows donors to select
+and view needs by the nonprofit that referred them, increasing donor engagement by 10% and resulting in more
+effective resource allocation.</p>
+                        </div>
+                        <div className='exp-tech-stack'>
+                            <img className="firstLogo hidden" alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"></img>
+                            <img className="forthLogo hidden" alt="javascript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E" />
+                            <img className="fifthLogo hidden" alt="html5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" />
+                            <img className="sixthLogo hidden" alt="css3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"></img>
+                        </div>
+                    </div>
+                </div>
+                <div className='exp-container-inner hidden'>
+                    <div className='left'>
                         <h1>Knomadix</h1>
                         <h4><i>Front End Developer Intern</i></h4>
                     </div>
                     <div className='right'>
                         <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
-                            <p>Creatively designed and developed two responsive layouts using React JSX, MaterialUI, and CSS improved the readability of information presented to end users by 30%</p>
+                            <p>Designed intuitive and modern UI layouts in Figma, then implemented them using React Components, resulting
+                            in a 25% increase in click-through rates on key actions due to a simplified and more visually appealing interface</p>
                         </div>
                         <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
-                            <p>Collaborated closely with backend developers to implement over 10+ new APIs using React Redux, improving the accessibility and management of dozens of APIs for the team</p>
+                            <p>Collaborated closely with backend developers to implement over 10+ new APIs using React Redux to retrieve
+and manage critical data such as assignment and subscription details, making data more accessible and
+improving workflows for the development team</p>
                         </div>
                         <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
@@ -187,7 +220,8 @@ export default function MainPage() {
                         </div>
                         <div className='bullets-hidden hidden'>
                             <img src={checkIcon} className='checkIcon'></img>
-                            <p>Set up interactive forms using JavaScript from the UI and utilized APIs to successfully update subscription plans, notifications, and school and user information</p>
+                            <p>Handled JSON Data accordingly to display assignment and subscription details on tables, graphs, and
+                            dashboards using Material UI components</p>
                         </div>
                         <div className='exp-tech-stack'>
                             <img className="firstLogo hidden" alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"></img>
