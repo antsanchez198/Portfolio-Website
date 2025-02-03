@@ -218,11 +218,6 @@ improving workflows for the development team</p>
                             <img src={checkIcon} className='checkIcon'></img>
                             <p>Handled and manipulated JSON Data accordingly to best display assignment and subscription details on tables, graphs, and dashboards using Material UI components</p>
                         </div>
-                        <div className='bullets-hidden hidden'>
-                            <img src={checkIcon} className='checkIcon'></img>
-                            <p>Handled JSON Data accordingly to display assignment and subscription details on tables, graphs, and
-                            dashboards using Material UI components</p>
-                        </div>
                         <div className='exp-tech-stack'>
                             <img className="firstLogo hidden" alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"></img>
                             <img className="secondLogo hidden" alt="redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&amp;logo=redux&amp;logoColor=white" />
