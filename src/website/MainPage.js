@@ -146,7 +146,7 @@ export default function MainPage() {
                                 />
                             </a>
                             <a
-                                href="https://drive.google.com/file/d/1MGceoywocVhxLkqClKNNLxQO-nzCQQbM/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1hmsIyVuDi4dg9jRwr9qAK8grlomfwZWo/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
                                 title="View Resume"
